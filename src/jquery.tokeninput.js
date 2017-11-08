@@ -358,6 +358,19 @@
               var next_token;
 
               switch(event.keyCode) {
+                  case KEY.LEFT:
+                  case KEY.RIGHT:
+                  case KEY.UP:
+                  case KEY.DOWN:
+			break;
+		  
+                  case KEY.TAB:
+                  case KEY.ENTER:
+                  case KEY.NUMPAD_ENTER:
+                  case KEY.COMMA:
+                  case KEY.ESCAPE:
+		      return false;
+	     
                   case KEY.BACKSPACE:
                       previous_token = input_token.prev();
 
