@@ -173,6 +173,7 @@
       destroy: function () {
         if (this.data("tokenInputObject")) {
           this.data("tokenInputObject").clear();
+          $('.'+ this.data("settings").classes.dropdown ).remove();
           var tmpInput = this;
           var closest = this.parent();
           closest.empty();
